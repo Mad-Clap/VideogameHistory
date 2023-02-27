@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+    <title>Trabalho 2 – DPW</title>
+    <link rel="stylesheet" href="index.css" type="text/css">
+    <script src="index.js"></script>
+
+    <style media="screen">
+    .caixa_quiz{
+      border-style:solid;
+      border-width:15px;
+      border-right:0px;
+      margin-top:5%;
+      margin-bottom: 5%;
+      border-top-color: black;
+      border-bottom-color: black;
+      border-left-color: gold;
+    }
+    #Q1{
+      color:Navy;
+
+    }
+    #Q2 h2 {background-color: cyan;}
+    #Q2 h3 {background-color: green;}
+
+    #Q3{
+      background-image:url("Imagens/Stars.gif");
+    }
+    #Q4{
+      font-family: "Felix Titling";
+    }
+    #Q5{
+      border-style: double;
+    }
+    #Q6{
+      border-radius:20px;
+    }
+    #Q7{
+      border-top-color: yellow;
+      border-bottom-color: green;
+      border-left-color: blue;
+    }
+    #Q8{border-left: 0px;}
+
+    #Q9{
+      border-left-color: orange;
+      background-color: gold;
+    }
+    #Q10 form{
+      background-color: gold;
+    }
+    h3,form{padding-left: 10px;}
+
+    #R_DIV{
+      visibility: hidden;
+    }
+    .solu:hover + #R_DIV {
+      visibility: visible;
+    }
+    </style>
+
+  </head>
+
+  <body onload="dia_1(),evento()">
+
+    <header>
+      <h1 id="00">Game Quiz</h1>
+    </header>
+
+    <!-- Navegação páginas -->
+    <nav style="text-align:center;">
+      <ul id="ul1">
+        <li><a href="historia.html" target="_self">HISTÓRIA</a></li>
+        <li><a href="index.html" target="_self">SOBRE</a></li>
+        <li><a href="referencias.html" target="_self">REFERÊNCIAS</a></li>
+        <li><a href="Quiz.html" target="_self">QUIZ</a></li>
+
+      </ul>
+      <br> <br>
+
+    </nav>
+    <main id="tagsth" style="text-align:center; border-left:0px;">
+      <h3>Página de Quiz do que foi abordado no site sobre videogames </h3>
+    </main>
+
+    <article class="caixa_quiz" id="Q1">
+      <br><h2 Style="text-align:center"> Questão.1</h2><br>
+      <h3 Style="text-align:center;"><span id="Pr_letra">R</span>elacione a geração aos videogames:</h3>
+      <div style="float:right; padding-right:30%">
+        <br> <br>
+        <form>
+           <label for="magna">Magnavox Odyssey:</label>
+           <input type="number" id="magna" name="quiz_1" min="1" max="8" style="width: 30px"><br>
+
+           <label for="SNES">Super Nintendo:</label>
+           <input type="number" id="SNES" name="quiz_1" min="1" max="8" style="width: 30px"><br>
+
+           <label for="atari2600">Atari 2600:</label>
+           <input type="number" id="atari2600" name="quiz_1" min="1" max="8" style="width: 30px"><br>
+
+           <label for="PS4">Playstation 4:</label>
+           <input type="number" id="PS4" name="quiz_1" min="1" max="8" style="width: 30px"><br>
+
+           <label for="3DO">3DO:</label>
+           <input type="number" id="3DO" name="quiz_1" min="1" max="8" style="width: 30px"><br>
+
+           <label for="dream">Dreamcast:</label>
+           <input type="number" id="dream" name="quiz_1" min="1" max="8" style="width: 30px"><br>
+           <!--<input type="submit" value="Submeta"> -->
+        </form>
+      </div>
+        <br>
+        <ol type="1" style="padding-left:30%">
+          <li> Primeira geração </li>
+          <li> Segunda geração </li>
+          <li> Terceira geração </li>
+          <li> Quarta geração </li>
+          <li> Quinta geração </li>
+          <li> Sexta geração </li>
+          <li> Sétima geração </li>
+          <li> Oitava geração </li>
+        </ol>
+    </article>
+
+    <article class="caixa_quiz" id="Q2">
+      <h2 Style="text-align:center">Questão.2</h2>
+      <h3>Qual foi o primeiro console de mesa a ter tecnologia de cartuchos?</h3>
+      <form>
+        <input type="radio" id="atari" name="quiz_2" value="false">
+        <label for="atari">Atari 2600</label><br>
+
+        <input type="radio" id="odyssey" name="quiz_2" value="false">
+        <label for="odyssey">magnavox Odyssey</label><br>
+
+        <input type="radio" id="Master" name="quiz_2" value="false">
+        <label for="Master">Master System</label><br>
+
+        <input type="radio" id="CF" name="quiz_2" value="true">
+        <label for="CF">Fairchild Channel F</label><br>
+      </form>
+    </article>
+
+    <article class="caixa_quiz" id="Q3">
+      <h2 Style="text-align:center">Questão.3</h2>
+      <h3> Qual o nome do primeiro video-game portátil?</h3>
+      <form>
+        <label for="R" >&nbsp;&nbsp;Resposta:</label>
+        <input type="text" id="R" name="quiz_3">
+      </form>
+    </article>
+
+    <article class="caixa_quiz" id="Q4">
+      <h2 Style="text-align:center">Questão.4</h2>
+      <h3>Quais são videogames da SEGA?</h3>
+      <form>
+        <input type="checkbox" name="quiz_4" value="SEGA"> Saturn<br>
+        <input type="checkbox" name="quiz_4" value="Atari"> Jaguar<br>
+        <input type="checkbox" name="quiz_4" value="NEC"> Pc Engine<br>
+        <input type="checkbox" name="quiz_4" value="SEGA"> Master System<br>
+        <input type="checkbox" name="quiz_4" value="Nintendo"> Gamecube<br>
+        <input type="checkbox" name="quiz_4" value="SEGA">Mega Drive<br>
+        <input type="checkbox" name="quiz_4" value="Bandai"> Pippin<br>
+        <input type="checkbox" name="quiz_4" value="SEGA"> Genesis<br>
+        <input type="checkbox" name="quiz_4" value="Microsoft"> XBOX<br>
+        <input type="checkbox" name="quiz_4" value="SEGA"> Dreamcast<br>
+      </form>
+    </article>
+
+    <article class="caixa_quiz" id="Q5">
+      <h2 Style="text-align:center">Questão.5</h2>
+      <h3>Em qual data foi aberto ao público para ser jogado o Tennis for Two, primeiro videogame, feito por Willy Higinbotham?</h3>
+      <form>
+        <label for="data">&nbsp;&nbsp;Resposta:</label>
+        <input type="date" id="data" name="quiz_5">
+      </form>
+    </article>
+
+    <article class="caixa_quiz" id="Q6">
+      <h2 Style="text-align:center">Questão.6</h2>
+      <h3>Qual os nomes japoneses dos consoles abaixo?</h3>
+      <form>
+        <label for="1">Nintendo Entertainment System (NES) -</label>
+        <input type="text" id="1" name="quiz_6"><br>
+
+        <label for="2">Genesis -</label>
+        <input type="text" id="2" name="quiz_6"><br>
+
+        <label for="3">Turbo Grafx 16 -</label>
+        <input type="text" id="3" name="quiz_6"><br>
+
+        <label for="4"> Super Nintendo Entertainment System (SNES)</label>
+        <input type="text" id="4" name="quiz_6"><br>
+      </form>
+    </article>
+
+    <article class="caixa_quiz" id="Q7">
+      <h2 Style="text-align:center">Questão.7</h2>
+      <h3 Style="text-align:center">Mantenha no quadro o par de consoles pertencentes à mesma empresa:</h3>
+      <form Style="text-align:center">
+        <select name="disciplinas" size="2">
+          <option value="gc">Game Cube</option>
+          <option value="ps">Playstation</option>
+          <option value="sa">Saturn</option>
+          <option value="aj">Atari Jaguar</option>
+          <option value="int">intellivision</option>
+          <option value="DC">Dreamcast</option>
+          <option value="MS">Master System</option>
+          <option value="co">Colecovision</option>
+          <option value="int">intellivision</option>
+        </select>
+      </form>
+    </article>
+
+    <article class="caixa_quiz" id="Q8">
+      <h2 Style="text-align:center"> Questão.8</h2>
+      <h3>O Game Boy Color em relação ao Game Boy :</h3>
+      <form>
+        <input type="radio" id="a" name="quiz_8" value="false">
+        <label for="a">Só adicionava cores aos jogos</label><br>
+
+        <input type="radio" id="b" name="quiz_8" value="false">
+        <label for="b">Adicionava cores aos jogos e tinha tela Touch Screen</label><br>
+
+        <input type="radio" id="c" name="quiz_8" value="false">
+        <label for="c">Era visualmente bem diferente do Game Boy original</label><br>
+
+        <input type="radio" id="d" name="quiz_8" value="true">
+        <label for="d">Teve um melhoramento de hardware e adição de cores aos jogos</label><br>
+      </form>
+    </article>
+
+    <article class="caixa_quiz" id="Q9">
+      <h2 Style="text-align:center">Questão.9</h2>
+      <h3>Qual o nome do estúdio da SEGA que desenvolveu jogos em máquinas arcades os quais ajudaram na transição do 2D para o 3D dos videogames?</h3>
+      <form>
+        <input type="radio" id="e" name="quiz_9" value="false">
+        <label for="e">Sonic Team</label><br>
+
+        <input type="radio" id="f" name="quiz_9" value="false">
+        <label for="f">SEGA Studio</label><br>
+
+        <input type="radio" id="g" name="quiz_9" value="false">
+        <label for="g">SEGA-AM2</label><br>
+
+        <input type="radio" id="h" name="quiz_9" value="true">
+        <label for="h">Virtua Fighters</label><br>
+      </form>
+    </article>
+
+    <article class="caixa_quiz" id="Q10">
+      <h2 style="text-align:center">Questão.10</h2>
+      <h3>Qual o nome do dono da empresa Milton Bradley Company, que criou o primeiro console portátil com entrada para cartuchos?</h3>
+      <form>
+        <input type="radio" id="i" name="quiz_9" value="false">
+        <label for="i">Milton Bradley</label><br>
+
+        <input type="radio" id="j" name="quiz_9" value="false">
+        <label for="j">Robotnik</label><br>
+
+        <input type="radio" id="kl" name="quiz_9" value="false">
+        <label for="kl">Master Chief</label><br>
+
+        <input type="radio" id="l" name="quiz_9" value="true">
+        <label for="l">Bowser</label><br>
+      </form>
+    </article>
+
+
+    <p dir="rtl"> &nbsp;<sub><a href="#00"> Fim do texto</a>-</sub></p>
+
+    <h2 class="solu" style="text-align:center"> Passe o mouse para ver as respostas:</h2>
+    <div id="R_DIV">
+      <p>Questão.1: magnavox(1) / Super Nintendo (4) / Atari 2600(2) / Playstation 4(8) / 3DO (5) / Dreamcast (6)</p>
+      <p> Questão.2: Fairchild Channel F</p>
+      <p> Questão.3: Auto Race</p>
+      <p> Questão.4: Saturn, Master System, Mega Drive, Dreamcast</p>
+      <p>Questão.5: 18/10/1958</p>
+      <p>Questão.6: Nintendo Entertainment System(NES) - Nintendo Family Computer (FAMICOM) <br> Genesis - Mega Drive <br> Turbo Grafx 16 - Pc Engine <br> Super Nintendo Entertainment System(SNES) - Nintendo Super Family Computer (Super FAMICOM)</p>
+      <p> Questão.7: Dreamcast, Master System</p>
+      <p> Questão.8: Teve um melhoramento de hardware e adição de cores aos jogos</p>
+      <p> Questão.9: SEGA AM2</p>
+      <p> Questão.10: Milton Bradley
+      <br><br><br><br><br>
+    </div>
+
+    <footer id="footer">
+      <ul style="margin:0;padding:0;overflow: hidden;list-style-type: none; bottom:0;">
+        <li  style="padding:16px;"> BSI- Bacharelado em Sistemas de Informação</li>
+        <li  style="padding:16px;"> DPW- Desenvolvimento de Páginas Web</li>
+        <li id="passou" style="padding:16px;"> Faltam <span id="dias"> </span> dias para a Brasil Game Show!</li>
+      </ul>
+    </footer>
+  </body>
+</html>

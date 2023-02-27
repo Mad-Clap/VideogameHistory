@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+  <title>Trabalho 2 – DPW</title>
+  <link rel="stylesheet" href="index.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="index.js"></script>
+
+  <style media="screen">
+    .controle-slide:nth-child(1):checked~.slide-show .lista-slides {
+      --selected-item: 0;
+    }
+
+    .controle-slide:nth-child(2):checked~.slide-show .lista-slides {
+      --selected-item: 1;
+    }
+
+    .controle-slide:nth-child(3):checked~.slide-show .lista-slides {
+      --selected-item: 2;
+    }
+
+    .controle-slide:nth-child(4):checked~.slide-show .lista-slides {
+      --selected-item: 3;
+    }
+
+    .slide-show {
+      overflow: hidden;
+      text-align: center;
+    }
+
+    .lista-slides {
+      --selected-item: 0;
+      --total-items: 4;
+      list-style-type: none;
+      margin: 10px 0;
+      padding: 0;
+      position: relative;
+      left: calc(var(--selected-item) * -100%);
+      width: calc(var(--total-items) * 100%);
+      transition: left 0.4s cubic-bezier(0.680, -0.550, 0.265, 1.550);
+      display: grid;
+      grid-auto-flow: column;
+      grid-auto-columns: 1fr;
+    }
+  </style>
+</head>
+
+<body onload="dia_1(), evento()">
+
+  <header>
+    <h1 id="00">Breve História do Video Game</h1>
+  </header>
+  <!-- NAVEGAÇÃO PELAS PÁGINAS -->
+  <nav style="text-align:center;">
+    <ul id="ul1">
+      <li><a href="historia.html" target="_self">HISTÓRIA</a></li>
+      <li><a href="index.html" target="_self">SOBRE</a></li>
+      <li><a href="referencias.html" target="_self">REFERÊNCIAS</a></li>
+      <li><a href="quiz.html" target="_self">QUIZ</a></li>
+    </ul>
+    <br> <br>
+  </nav>
+
+  <!-- TABELA DE SELETORES DOS TÓPICOS -->
+
+  <header id="tagsth">
+    <ul style="list-style-type:none;">
+      <li> <a href="#1">Tennis for Two: o início</a> </li>
+      <li> <a href="#2"> Magnus Ludus: os primeiros consoles</a> </li>
+      <li> <a href="#3"> O Sol Nascente na Terra dos Jogos</a> </li>
+      <li> <a href="#9"> Nos Arcades</a> </li>
+      <li> <a href="#4"> Console War</a> </li>
+      <li> <a href=#5> Mudanças no Mercado</a> </li>
+      <li> <a href="#6"> Queda e Ascensão: Parte 1</a> </li>
+      <li> <a href="#7"> Queda e Ascensão: parte 2</a> </li>
+      <li> <a href="#8"> E os Negócios Continuam</a> </li>
+      <li> <a href="#10"> Portáteis: Uma Jornada de Bolso </a> </li>
+      <li> <a href="#11"> Competição Portátil </a> </li>
+      <li> <a href="#12"> Semi-Final</a> </li>
+    </ul>
+  </header>
+
+
+  <aside class="img-container1">
+    <img src="imagens/jojo.png" alt="Tf2" class="img" style="padding-top:100px">
+    <img src="imagens/spacewar.jpg" alt="spacewar" class="img">
+  </aside>
+
+  <main>
+    <!-- CONTAINER FLEX BRANCO À ESQUERDA/ TÓPICO 1-->
+    <section class="flex-container2">
+
+      <h2 id="1" style="text-align:center;">Tennis For Two: O início</h2>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span id="Pr_letra">O</span> primeiro videogame foi feito na instituição
+        tecnológica Brookhaven National Laboratories, por Willy Higinbotham, e aberto para demonstração ao público em 18
+        de outubro de 1958, com o intuito de aumentar as visitas feitas ao instituto e fazer as pessoas se interessarem
+        mais por tecnologia. Na tela de um osciloscópio tinha-se um pixel como bola ricocheteando, uma linha horizontal
+        de uma ponta a outra e uma outra pequena na vertical. Em cada lado da rede vertical comandava um jogador, cujo
+        objetivo era, utilizando um potenciômetro de controle, acertar o ângulo da bola e rebatê-la ao toque de um
+        botão, de modo que ela passasse ao outro lado sem bater na rede/linha vertical.</p>
+
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Em 1961 no MIT Martin Graetz, Stephen Russel e Wayne Wiitanen criaram no
+        computador DEC-PDP 1 em Assembly o jogo Spacerwar, que consistia na batalha entre duas naves espaciais no
+        espaço. O jogo foi posteriormente portado por Nolan Bushbell para um gabinete com controles e tela, chamado por
+        ele de Computer Space. A máquina é considerada o primeiro arcade da história e lançou os gabinetes dedicados a
+        jogos que foi sucesso por muitos anos em todo mundo, e apesar de ter enfraquecido no mercado ocidental ainda é
+        um grande mercado em países como o Japão, onde casas de fliperamas/arcades continuam evoluindo.</p>
+    </section>
+
+    <aside class="img-container2">
+      <img src="imagens/magnavox.png" alt="magnavox" class="img">
+      <img src="imagens/Atari2600.png" alt="Atari2600" class="img">
+    </aside>
+
+    <!-- CONTAINER FLEX PRETO À DIREITA/ TÓPICO 2-->
+    <section class="flex-container1">
+      <h2 id="2" dir=rtl>Magnus Ludus: Os primeiros consoles</h2>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ralph Baer foi o primeiro a criar um protótipo de console de mesa em 1967,
+        chamado Brow Box. Rodando jogos de futebol, o já genérico Pong e tendo uma réplica de espingarda para jogos de
+        tiro, a estreia comercial de seu modelo viria com o Magnavox Odyssey 100, compatível com televisores da empresa
+        Magnavox. O primeiro console a ter tecnologia de jogos em cartuchos trocáveis foi o Fairchild Channel F, mas o
+        primeiro a conseguir grande successo comercial que a utilizava foi o Atari 2600, console de mesa feita pela
+        Atari, já na época comprada pela Warner company e voltando-se para videogames caseiros ao invés da fabricação de
+        arcades. Outros consoles da época foram o Odyssey 2, Colecovision e Milton Bradley Vectrex, um console de mesa
+        que vinha já com monitor. O sucesso do Atari 2600 foi seguido de uma saturação do mercado pela falta de controle
+        na produção de jogos para a plataforma e consequentemente a grande quantidade de jogos sem graça e genéricos
+        vendidos a preços caros. Esses fatores levariam a uma grande “depressão” do mercado de jogos no Ocidente, sendo
+        salvo apenas pela chegada dos consoles orientais das grandes Sega e Nintendo.
+      </p>
+    </section>
+
+    <aside class="img-container1">
+      <img src="imagens/SF_SN.png" alt="SuperF/N" class="img">
+      <img src="imagens/Mega-D.png" alt="Mega" class="img">
+    </aside>
+
+    <!-- TÓPICO 3 -->
+    <section class="flex-container2">
+
+      <h2 id="3" style="text-align:center;"><span lang="ja">スーパーファミコン:</span> O Sol Nascente na Terra dos Jogos.</h2>
+
+      <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;O mercado de videogames no Japão, ao contrário do que ocorria em seu outro
+        grande polo, os EUA, nunca chegou perto de uma crise tão grande, e os consoles desenvolvidos por empresas
+        japonesas tinham grande prestígio e qualidade. Em especial o console 8-bits da empresa de brinquedos Nintendo,
+        Famicom (Family Computer), foi por muitos anos um grande sucesso e em setembro de 1986 trazido para a América
+        com o nome de Nintendo Entertainment System (NES), onde já havia uma base operacional das máquinas de arcade da
+        Nintendo, de certa forma “salvando” o mercado de consoles de mesa por lá. Sua trava interna para jogos não
+        licenciados e o selo de qualidade Nintendo garantia uma biblioteca de jogos de alta qualidade. Após a Nintendo
+        veio a Sega com o SG-1000 (Mark I no Japão), depois o Master System (Mark II no Japão), e emplacando finalmente
+        nos EUA com o Genesis, no resto do mundo como Mega Drive, para tentar competir com outro console de 16-bits
+        japonês, o Pc Engine, renomeado Turbo Grafx 16 no ocidente, que estava comendo uma bela fatia do mercado da Sega
+        na terra do sol nascente, sendo um console com jogos mais pesados para adolescentes, e com ótimos ports de
+        arcades, atingindo o público que a SEGA havia cativado. Em 1990, a Nintendo finalmente lançou o seu console 16
+        Bits, o Super Famicom, ou Super Nintendo, como seria renomeado um ano após nos Estados Unidos, que foi um grande
+        sucesso e competiu duramente com o Mega Drive/Genesis.
+      </p>
+    </section>
+
+    <!-- TEXTO CENTRAL/ TÓPICO 4 -->
+    <section id="9" class="texto_central">
+      <h2 style="text-align:center;">Nos Arcades</h2>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;As máquinas de arcades foram grande sucesso no mundo todo enquanto os
+        consoles de mesa não conseguiam acompanhar a tecnologia das placas específicas. Um dos mais bem sucedidos, feito
+        pela Namco, foi Pac-man (1980), o carismático “come-come” tornou-se rapidamente uma febre internacional. Antes
+        dele um gigantesco sucesso no Japão foi Space invaders (1978), tão jogado pelos japoneses que foi apontado como
+        a causa do sumiço das moedas de 100 yenes por todo território nacional.</p>
+
+
+      <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Anos depois da febre dos arcades ser substituída pela febre dos consoles
+        de mesa, grandes jogos de luta fizeram renascer o interesse do público pelas cabines de jogos, como Street
+        Fighter II (1991), da Capcom, e Mortal Kombat da Midway (1992), o jogo de luta ocidental gore com captação de
+        movimentos de pessoas reais para os sprites. Foi a melhor época para o estilo de jogos de luta e quando
+        começaram as competições oficiais do gênero que ocorrem até hoje, como a EVO no ocidente. Street Fighter II em
+        especial definiu o estilo dos jogos de luta de arcade que viriam posteriormente, como King of Fighters e Fatal
+        Fury, e foi responsável por essa nova ascensão nos arcades.
+      </p>
+
+
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Com placas dedicadas, mais caras e potentes que os consoles por muito
+        tempo, nos arcades era visto melhores gráficos e sonoridade do que nos consoles de mesa. Seus ports para esses
+        aparelhos praticamente nunca atingiam a qualidade do jogo original. Grandes revoluções tecnológicas ocorreram
+        nos gabinetes de arcade, uma das maiores sendo Virtua Racer e Virtua Fighter, primeiros jogos a implementarem
+        eficientemente polígonos e jogabilidade 3D. Com a evolução dos consoles os arcades foram perdendo importância no
+        Ocidente, mas como já dito, no Japão ainda há grandes casas de arcades.
+      </p>
+
+      <div style="text-align:center;margin:0">
+        <input type="radio" class="controle-slide" name="slide" checked />
+        <input type="radio" class="controle-slide" name="slide" />
+        <input type="radio" class="controle-slide" name="slide" />
+        <input type="radio" class="controle-slide" name="slide" />
+        <div class="slide-show">
+          <ul class="lista-slides">
+            <li class="slide">
+              <img style="padding-left: 16px; display: inline;" src="imagens/Pac-man_arcade.jpg" alt="Pac-man_arcade"
+                class="img">
+              <img style="padding-left: 16px; display: inline;" src="imagens/ArcadesSSF2.jpg" alt="ArcadesSSF2"
+                class="img">
+            </li>
+            <li class="slide">
+              <img style="padding-left: 16px; display: inline;" src="imagens/arcade3.png" alt="arcade3" class="img">
+              <img style="padding-left: 16px; display: inline;" src="imagens/arcade5.png" alt="arcade5" class="img">
+            </li>
+            <li class="slide">
+              <img style="padding-left: 16px; display: inline;" src="imagens/arcade6.jpg" alt="arcade6" class="img">
+              <img style="padding-left: 16px; display: inline;" src="imagens/arcade7.jpg" alt="arcade7" class="img">
+            </li>
+            <li class="slide">
+              <img style="padding-left: 16px; display: inline;" src="imagens/arcade8.jpg" alt="PS1" class="img">
+              <img style="padding-left: 16px; display: inline;" src="imagens/arcade9.jpg" alt="dreamcast" class="img">
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </section>
+
+    <aside class="img-container2">
+      <img src="imagens/master-sword.png" alt="SW" class="img" id="altera1" style="padding-top:105px;">
+      <img src="imagens/Sonic_Mario.png" alt="S_M" class="img" id="altera3" style="padding-top:105px;">
+      <img src="imagens/Mario_ad.jpg" alt="M" class="img" id="altera2" style="padding-top:105px;">
+    </aside>
+    <!-- TÓPICO 5 -->
+    <section class="flex-container1">
+      <h2 id="4" dir="rtl"> Console War</h2>
+
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A disputa entre Mario e Sonic, Sega e Nintendo pela maior fatia do mercado
+        mundial durou da segunda metade da década de 80 até o fim da primeira metade da década de 90. As duas empresas
+        eram as maiores produtoras de console e investiam pesado também em seus jogos exclusivos e mascotes, o encanador
+        nascido nos 8-bits e o ouriço que veio de brinde no console de 16-bits da Sega nos EUA. Uma grande atração que
+        começou a ocorrer também na época foi as competições de videogames financiadas pelas empresas, a nível nacional
+        (nos Estados Unidos), ou mesmo mundial. A primeira Nintendo World Champioship, que ocorreu nacionalmente, foi
+        lançada no final da vida do NES em 1990, sendo uma disputa de pontos em jogos como Tetris, Rad Racer e Mario, e
+        o campeonato da SEGA, MTV SEGA: Rock the Rock, foi uma disputa de coleta de anéis em Sonic & Knuckles, esse sim
+        a nível mundial, e teve a final na ilha-prisão de Alcatraz televisionada pela MTV.
+      </p>
+
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Outros projetos do ocidente como o Atari 7800 e Jaguar, o console
+        open-source 3DO e o intellivision tinham uma parcela diminuta no mercado em comparação ao NES e Master System, e
+        posteriormente ao Mega Drive e Super Nintendo. No Japão outros consoles foram desenvolvidos também como o SNK
+        Neo-Geo CD, que trazia os títulos de arcade da SNK para casa, mas a Nintendo lá ainda reinava suprema. Tudo
+        mudou quando a Sony, após perder um contrato para desenvolver um implemento de CD para o Super Nintendo/Famicom,
+        ter decidido lançar o próprio console: O Playstation.
+      </p>
+    </section>
+
+    <aside class="img-container1">
+      <img src="imagens/PS1.png" alt="PS1" class="img" style="padding-top:55px;">
+      <img src="imagens/N64.png" alt="N64" class="img">
+    </aside>
+
+    <!-- TÓPICO 6 -->
+    <section class="flex-container2">
+      <h2 id="5">&nbsp;&nbsp;&nbsp;Mudanças no Mercado</h2>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;O mercado de videogames mudou de cenário quando a Nintendo quebrou contrato
+        com a Sony no desenvolvimento do Play Station, o implemento para Super Famicom que rodaria jogos em CD. Com a
+        ideia de um videogame com mídia de Cds, uma tecnologia que a própria Sony havia ajudado a desenvolver e tinha
+        direitos sobre, foi desenvolvido o Playstation, o console mais rentável da geração, lançado em 3 de dezembro de
+        1994, e que fez a virada para os jogos verdadeiramente 3D. A ideia do foco em 3D, segundo seus desenvolvedores,
+        veio após terem visto os jogos da SEGA-AM2, estúdio da SEGA que lançou Virtua Fighter para arcades. A SEGA, ao
+        contrário, não apostou no 3D para seu Saturn, ou Saturno, tendo que implementar chips permitindo a geração de
+        polígonos e jogos 3D já em um momento avançado do desenvolvimento do console. Apesar de ter vendido
+        relativamente bem desde o seu lançamento no Japão, pouco mais de uma semana antes que o Playstation, a falta de
+        suporte de produtoras pela dificuldade de programação e limitações em jogos 3D o deixou esquecido no tempo, com
+        uma biblioteca de jogos também bem pequena, focada mais para o público japonês. No lançamento ocidental, feito
+        mais tardiamente, esses problemas se somaram ao marketing completamente louco da SEGA da América, que fechou a
+        tampa do caixão do console antes mesmo de seu lançamento no ocidente.
+      </p>
+
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Após a quebra de contrato com a Sony, a Nintendo fechou parceria com a
+        Silicon Graphics, lançando em 1996 o Nintendo 64, seu console de 64 bits, contra os 32 bits do Saturn e
+        Playstation. Seus cartuchos tinham muito pouco espaço de armazenamento, e o controle, apesar de possuir o
+        primeiro analógico da história dos consoles, era de fato bem estranho. Poucas desenvolvedoras lançaram jogos
+        para o aparelho, ficando a cargo da Nintendo lançar ótimos jogos first party, mas que não conseguiram bater a
+        popularidade do Playstation.
+      </p>
+
+    </section>
+    <aside class="img-container2">
+      <img src="imagens/dreamc.png" alt="dreamcast" class="img" style="padding-top:55px;">
+      <img src="imagens/PS2.png" alt="PS2" class="img">
+    </aside>
+
+    <!-- TÓPICO 7 -->
+    <section class="flex-container1">
+      <h2 id="6" dir="rtl">Queda e Ascensão: Parte 1</h2>
+      <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Para a sexta geração foi a vez da SEGA fechar parceria com outra empresa
+        no desenvolvimento de seu novo console. Assim nasceu a parceria com a Microsoft no desenvolvimento do Dreamcast,
+        o 64 bits da SEGA. Lançado em 1998, dois anos antes do novo Playstation da Sony, a máquina tinha uma boa
+        melhoria em relação ao Saturn, com um analógico no controle (num lugar adequado), gráficos poderosos, superiores
+        a qualquer outro console existente, boa portabilidade de arcades, marca registrada nos caseiros da SEGA, e
+        ótimos jogos exclusivos também. Recebeu um novo jogo principal de Sonic, algo que faltava no Saturn. Sua
+        arquitetura parecida com a de um Windows, graças à parceria com a Microsoft, o tornava muito mais fácil de
+        programar, e permitiu uma entrada de rede internet direto no console, dando um melhor suporte a jogos online.
+        Infelizmente problemas internos de divergência na SEGA, principalmente entre as filiais da América e do Japão,
+        começaram a gerar problemas de logística, e consequentemente financeiros. Também teve baixa adesão de
+        desenvolvedoras, no geral.
+      </p>
+
+      <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nos anos 2000 lançava o Playstation 2. Tendo retrocompatibilidade com seu
+        antecessor, já vinha com uma biblioteca enorme, e apesar de começar a vida com problemas no hardware e software
+        no lançamento, a Sony tinha uma alta adesão de desenvolvedoras e soube aproveitar os problemas da SEGA para
+        alçar seu console às alturas. O Playstation 2 terminou sua vida sendo o console mais vendido na história. O
+        último modelo da versão Slim foi lançado em 2009 (9 anos depois do lançamento original), mesmo ano do lançamento
+        de seu sucessor, o Playstation 3, que demorou certo tempo para começar a vender mais que o PS2. O Dreamcast foi
+        o último console de mesa da SEGA, parou de ser fabricado em 2001, mesmo ano que a Microsoft lançou um console
+        inspirado em sua parceria com a empresa nipônica, o Xbox.
+      </p>
+    </section>
+
+    <aside class="img-container1">
+      <img src="imagens/Wii.png" alt="Wii" class="img" style="padding-top:55px;">
+      <img src="imagens/X360.png" alt="360" class="img">
+    </aside>
+    <!-- TÓPICO 8 -->
+    <section class="flex-container2">
+      <h2 id="7">&nbsp;&nbsp;&nbsp;Queda e Ascensão: Parte 2</h2>
+      <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A Microsoft, após ajudar na fabricação do Dreamcast, decidiu aproveitar a
+        experiência e lançar seu próprio console, com a ideia de ser basicamente um computador dentro da carcaça de um
+        videogame. O projeto DirectXBox entrou no mercado com títulos que tornaram-se grandes franquias, como Halo, mas
+        sem força o suficiente para sustentar a divisão de jogos ou bater de frente com o Playstation 2. Além disso o
+        Xbox foi quase que totalmente ignorado no mercado japonês, assim como seus sucessores também nunca fizeram
+        grande sucesso por lá. Mesmo assim sua pegada mais ocidental nos jogos e uma boa rede de jogo online garantiram
+        uma pequena fatia do mercado para o Xbox, fatia essa que cresceu muito com seu sucessor, o Xbox 360, na sétima
+        geração. Chegando antes do Playstation 3, com uma mídia mais barata que o Blu-ray, o DVD Dual Layer, e um salto
+        de gráficos significativo de uma geração para a outra, o Xbox 360 foi um grande sucesso da Microsoft.
+      </p>
+
+      <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A Nintendo também lançou seu novo console, em 2002, o Gamecube. Apesar de
+        sempre vender em seu país de origem, no geral o console não fez o sucesso esperado, e continuava com pouco
+        espaço de armazenamento em sua mídia. A pouca aceitação do console, apesar de suas especificações altas para a
+        época, fez a empresa mudar seu foco nos consoles de mesa e lançar, em novembro de 2006, o Nintendo Wii,
+        basicamente um Gamecube com poucas melhorias de hardware. A grande diferença estaria no controle, o wiimote, que
+        permitia inputs de movimento com giroscópio e acelerômetro. Foi também um dos consoles mais vendidos da
+        história, em quinto lugar no rank atrás de dois portáteis da Nintendo e os dois primeiro Playstations. O Wii
+        chamava a atenção de outros tipos de jogadores por seus jogos diferentes, associados ao movimento e geralmente a
+        um multiplayer local divertido, o que levou a críticas quanto a falta de jogos mais “hardcores” por alguns, que
+        diziam ser melhor os consoles da concorrência, o Xbox 360 e o Playstation 3. O console realmente tem vários
+        games de party, alguns bons e outros nem tanto, mas títulos de peso foram lançados no Wii também, como Xenoblade
+        Chronicles. A mudança de paradigma permitiu que o Wii corresse paralelo à disputa de hardware que ocorria forte
+        entre os concorrentes, dando um ciclo de vida muito proveitoso ao console. Alguns jogos ainda são lançados
+        atualmente (e anualmente) para ele, como Just Dance da Ubisoft.
+      </p>
+    </section>
+
+    <aside class="img-container2">
+      <img src="imagens/PS_XBOX.png" alt="PS_XBOX" class="img" style="padding-top:105px;">
+      <img src="imagens/Wii_U.png" alt="PS_XBOX" class="img" style="padding-top:55px;">
+    </aside>
+    <!-- TÓPICO 9 -->
+    <section class="flex-container1">
+      <h2 id="8" dir="rtl">E os Negócios Continuam</h2>
+      <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A Sony se atrasou no lançamento do Playstation 3, e sofreu com o sucesso
+        da Microsoft no ocidente. O Playstation 3 lançou em novembro de 2006, quase um ano depois do Xbox 360, que
+        lançara em dezembro de 2005. Esses dois consoles da sétima geração competiram mais por títulos exclusivos e
+        prestação de serviços online, já que graficamente ambos se aproximavam muito nos jogos que rodavam. O Wii foi o
+        mais vendido da geração, com sua procura por um público novo e novas formas de jogar, e em 2012 a Nintendo
+        decidiu lançar o primeiro console da oitava geração: Wii U. Tendo um gamepad com uma tela enorme no meio,
+        comercialmente o Wii U foi outro erro da Nintendo. A tela no gamepad servia para alguns jogos ou dividir tela em
+        multiplayer, mas com o passar do tempo, sem apoio novamente de empresas desenvolvedoras de jogos como Capcom e
+        Bandai Namco, nem mesmo a Nintendo achava grande utilidade para o seu controle enorme. O último jogo lançado
+        para o console e que seria o grande Zelda lançado para o Wii U não a utilizava a não ser para trocar a
+        visualização da saída HDMI para o gamepad, e mais uma vez ao focar em produzir um hardware mais poderoso, dessa
+        vez para atrair novamente alguns jogadores críticos do Wii, o Wii U pouco vendeu e teve poucos jogos de seu
+        lançamento até 2017, ano que parou de ser produzido pela Nintendo.
+      </p>
+
+      <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sony e Microsoft seguiram no lançamento de seus novos consoles,
+        Playstation 4 e Xbox One, em fevereiro e novembro de 2013, respectivamente. Os hardwares dos dois eram
+        parecidos, mas novas funcionalidades a cada um foram adicionadas. Enquanto o Xbox One vinha inicialmente de
+        forma obrigatória com o Kinect 2.0, a segunda versão de um leitor de movimento lançado ainda para Xbox 360, o
+        Playstation 4 expandiu suas possibilidades posteriormente com o Playstation VR, óculos de realidade virtual, que
+        utiliza os Playstation Move, sensores de movimento que também existiam desde a geração passada. Como encarecia
+        muito o preço do console, com o tempo o Xbox one deixou de ser vendido com o Kinect 2.0. Ambos consoles lançaram
+        posteriormente versões revisadas, uma Slim, mais compacta e barata, e uma pro, com um hardware melhor e suporte
+        à 4K. As novas versões do PS4 foram anunciadas em 7 de setembro de 2016, enquanto o Xbox One S (slim) foi
+        anunciado em 13 de junho de 2016 (e outra versão apenas para mídia digital em 16 de abril de 2019), e o Xbox One
+        X na E3 de 2016. Por fim em 2020 houve a chegada dos novos consoles, Playstation 5, com versões com e sem leitor
+        de discos Blu-ray , e o Xbox Series X e Xbox series S, o primeiro com hardware mais potente e leitor de discos
+        Blu-ray, o segundo um pouco mais fraco, sem suporte a 4k, e sem leitor .
+      </p>
+    </section>
+
+    <aside class="img-container1">
+      <img src="imagens/Game_boy.png" alt="Game_boy" class="img">
+      <img src="imagens/Game_Gear.png" alt="Game_Gear" class="img">
+    </aside>
+  </main>
+  <!-- TÓPICO 10 -->
+  <section class="flex-container2">
+    <h2 id="10">Portáteis: Uma Jornada de Bolso</h2>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A história dos videogames portáteis se inicia com o Auto Race, da Mattel, em
+      1976, um simples jogo de carro de corrida no qual deve-se chegar no topo da tela 4 vezes (em 4 voltas), desviando
+      de outros carros. Já o primeiro portátil a ser reprogramável por meio de cartuchos, possibilitando mudar de jogo,
+      foi o Milton Bradley Microvision, ou MB Microvision, desenvolvido pela Milton Bradley company em 1979. Mas a
+      empresa que fez mais sucesso no mercado de portáteis, praticamente monopolizando ao longo do tempo o setor com
+      todos seus hardwares desde sua entrada no mercado, foi a Nintendo. Começando com os não reprogramáveis Game &
+      Watch, um aparelho com um joguinho só e a função relógio digital, produto caro à época, só em 1989 lançaria no
+      mercado o Game Boy, linha de sucesso absoluto até o início do século 21, quando em 2004 foi sucedida pela linha DS
+      (Dual Screen).
+    </p>
+
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;O Game Boy teve três versões de Hardware diferentes, todas com
+      retrocompatibilidade com jogos da versão anterior: o Game Boy original, que tornou febre o jogo russo Tetris e
+      posteriormente Pokémon; o Game Boy Color, que mantinha visualmente o mesmo formato do Game Boy, foi uma versão com
+      cores e melhor processador lançada em 1998, que também permitia implementar paletas de cores em jogos do Game Boy
+      original, além de ter tido continuações como Pokémon Gold & Silver, e até remakes de jogos do seu antecessor como
+      Link’s Awakening DX; por fim em 2001 foi lançado o Game Boy Advance, um portátil mais potente e visualmente bem
+      diferente de seus dois antecessores, tendo uma capacidade parecida com o Super Nintendo, recebeu ports do console
+      de mesa da Nintendo como The Legend of Zelda: a Link to the Past e jogos do Mario, além de séries próprias como
+      Sonic Advance, da Sega.
+    </p>
+  </section>
+
+  <aside class="img-container2">
+    <img src="imagens/3DS.png" alt="3DS" class="img" style="padding-top:80px">
+    <img src="imagens/PSP.png" alt="PSP" class="img" style="padding-top:55px;">
+  </aside>
+
+  <section class="flex-container1">
+    <h2 id="11" dir="rtl">Competição Portátil</h2>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Durante seus praticamente 10 anos de monopólio como portátil, o Game Boy
+      original teve várias tentativas de concorrentes, os mais notáveis sendo o Watara Supervision, com saída para TV, e
+      o portátil Game Gear da SEGA , que apostava nos jogos com cores e parecia de certa forma um Master System 8-bits
+      em questão de Hardware, tanto que a Tec Toy, representante oficial da Sega no Brasil, converteu vários jogos do
+      portátil para o console de mesa 8-bits. Infelizmente a tela com cores veio a custo de muito consumo de energia, e
+      como os portáteis da época funcionavam à bateria, para o Game Gear isso significava um gasto insustentável de 6
+      pilhas por míseras 5 horas de jogo, enquanto o Game Boy com suas 4 pilhas mantinha-se ligado por aproximadamente
+      15 horas.
+    </p>
+
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Portáteis como Wonderswan, e seu sucessor Wonderswan Color, da Bandai, foram
+      comercializados apenas em terras nipônicas, mas nunca nenhum chegou próximo do sucesso da Nintendo, até a
+      companhia deixar de lado a linha Game Boy e começar a trabalhar com o Nintendo DS, um console de duas telas, sendo
+      a inferior touchscreen, com uma caneta stylus para interagir e entrada para jogos de GBA. O DS foi lançado no
+      final de 2004 no Japão, assim como o Playstation Portable (PSP) da Sony. Os dois tiveram grande sucesso de vendas
+      mundialmente e disputaram mais acirradamente o mercado. Ambos tiveram novas versões com o decorrer do tempo, como
+      o PSP GO, o Nintendo DS lite e o Nintendo DSi, com uma loja online e hardware superior, mas sem entrada para jogos
+      de GBA, e em 2011 por fim foram lançados seus sucessores.
+    </p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;O portátil Playstation Vita, da Sony, com touch screen na única tela e outro
+      sensor de toque nas “costas” do console, foi gradualmente abandonado pela empresa pelas dificuldades do setor de
+      portáteis, sendo uma das mais expressivas o desenvolvimento tecnológico dos celulares smartphones, que começaram a
+      ter potência suficiente para rodar jogos e basicamente substituir os consoles portáteis. Também o Nintendo 3DS,
+      novo portátil da Nintendo que vinha ainda no formato de duas telas, mas agora com a superior com efeito 3D sem
+      necessidade de um óculos especial, sofreu com poucas vendas no início de sua vida, porém a Nintendo não deixou de
+      dar suporte a ele por quase 6 anos, sendo o 3DS com certeza um exemplo de variações, tendo 6 versões diferentes:
+      as versões 3DS e 2DS (com e sem o efeito 3D), suas versões maiores, os XL, e o New Nintendo 3DS (XL), com hardware
+      revisado, e o New Nintendo 2DS (XL), o mesmo que o New 3DS mas sem o efeito 3D, seguindo seu antecessor. Com o
+      tempo e o investimento da Nintendo o pequeno portátil acabou vingando e inclusive virando carro-chefe da empresa
+      em questão de venda de hardwares.
+    </p>
+  </section>
+
+  <section class="texto_central">
+    <h2 id="12" style="text-align:center"> Semi-Final</h2>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Em 2017, aproveitando sua história com consoles portáteis e precisando
+      acertar após o siginificativo fracasso de seu console de mesa, o Wii U, a Nintendo decidiu lançar um console
+      híbrido, que alternasse entre um modo portátil e de mesa facilmente. O Switch, último console da nintendo lançado
+      até o momento, se parece com um tablet, onde se encaixa meio gamepad com sensores de movimento de cada lado, os
+      joycons, e pode ser colocado dentro do "dock", onde há a saída do cabo HDMI que se conecta à televisão. Em 2019 a
+      Nintendo lançou uma versão apenas portátil do seu console, o Nintendo Switch Lite. Fora isso, não houve nenhum
+      anúncio de um novo console unicamente portátil de peso com sistema e jogos próprios até agora. &nbsp;<sub>-<a
+          href="#00"> Fim do texto</a></sub>
+    </p>
+    <div style="text-align:center">
+      <ul style="margin:0;padding:0;overflow: hidden;list-style-type: none">
+        <li class="horizontal"><img src="imagens/nintendo_switch.jpg" alt="nintendo_switch" class="img"> </li>
+        <li class="horizontal"><img src="imagens/nintendo_switch_Lite.png" alt="nintendo_switch_Lite" class="img"> </li>
+      </ul>
+    </div>
+  </section>
+
+  <footer id="footer">
+    <ul style="margin:0;padding:0;overflow: hidden;list-style-type: none; bottom:0;">
+      <li style="padding:16px;"> BSI- Bacharelado em Sistemas de Informação</li>
+      <li style="padding:16px;"> DPW- Desenvolvimento de Páginas Web</li>
+      <li id="passou" style="padding:16px;"> Faltam <span id="dias"> </span> dias para a Brasil Game Show!</li>
+    </ul>
+  </footer>
+</body>
+
+</html>

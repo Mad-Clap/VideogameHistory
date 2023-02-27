@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+    <title>Trabalho 2 – DPW</title>
+    <link rel="stylesheet" href="index.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="index.js"></script>
+
+    <style media="screen">
+    body {
+      font-family: Bahnschrift;
+      border-width: 0px 0px 0px 0px;
+      padding-left:0px;
+      padding-right:0px;
+      background-color: #F5F5F5;
+      min-height: 100vh;
+    }
+
+    th,tr,td{
+      text-align: center;
+      border:3px solid black;
+    }
+  .tab_ano{
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: black;
+      color:gold;
+      font-size:25px;
+    }
+    </style>
+  </head>
+
+  <body onload="dia_1(),evento()">
+
+    <div style="border-width:0px 20px 0px 0px; border-style: solid; border-color: black">
+      <header>
+        <h1 id="00" style="text-align:center; font-family:Consolas;">Breve História do Video Game</h1>
+      </header>
+
+      <!-- Navegação páginas -->
+      <nav style="text-align:center;">
+        <ul id="ul1">
+          <li><a href="historia.html" target="_self">HISTÓRIA</a></li>
+          <li><a href="index.html" target="_self">SOBRE</a></li>
+          <li><a href="referencias.html" target="_self">REFERÊNCIAS</a></li>
+          <li><a href="quiz.html" target="_self">QUIZ</a></li>
+        </ul>
+        <br> <br>
+      </nav>
+        <header id="tagsth">
+          <ul style="list-style-type:none;">
+              <li> <a href="#1"> Sobre o Site</a> </li>
+              <li> <a href="#2"> História dos Videogames de mesa por gerações</a> </li>
+          </ul>
+        </header>
+
+      <h2 id="1" style="text-align:center">Sobre o Site</h2>
+      <main class="texto_central">
+        <p >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="Pr_letra">E</span>ste site foi criado no intuito de fazer um apanhado da história dos videogames, uma parte da indústria do entretenimento que movimenta bilhões de dólares mundiamente por ano, superando outras mídias como cinema, música, teatro, entre outras. A história do videoagame é algo extenso e que perpassa já por quatro décadas, muitas pessoas e histórias envolvidas, muitos dados e eventos, muita coisa a se contar, logo esse site não se propõe a contar a história dos videogames de maneira tão minuciosa, ou maçantemente presa a datas, apenas pincelar sobre os vários momentos da indústria, focando mais nos lançamentos dos consoles em si do que nos jogos. Em contraponto, a tabela abaixo conta resumidamente a historia dos videogames de mesa divida pelas gerações de consoles e jogos, basicamente época em que os jogos e o hardware dos consoles eram de certa forma, como utilizando poucos pixels e sem sprites, ou utilizando processadores gráficos de 8 ou 16-bits e foco em jogos com jogabilidade 2D e sprites, e dando mais exemplos de jogos que foram lançados em cada console e os exclusivos de cada empresa.
+        </p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A ideia da criação desse site passa por meu gosto pessoal, já que sempre fui desde criança um ávido apreciador da experiência audiovisual interativa que o videogame proporciona (claro que de modo corriqueiro e em minha tenra idade resumiria minha atividade recreativa favorita, em vez do escrito anterior ao parênteses, apenas por "jogar videogame"). Além disso achei que seria uma boa forma de reescrever e readaptar um material didático que possuo de uma matéria que tive em meu ensino médio. É um assunto no qual tenho interesse e afinidade, além de material didático acerca, logo achei que seria uma boa ideia fazer o site sobre ele. O nome de cada página html pedida está no h1, no topo da página, menos nesta página "sobre", já que seria a primeira página a ser vista e o nome deixado na página "historia" fora o nome pensado para o site em si, decidi deixá-lo no topo desta página também. Optei por tentar deixar tudo em flex para que o layout que escolhi não simplesmente se "desconfigura-se" em outros monitores. Mesmo assim testei tudo com vários zooms e tive vários erros de exibição, mas após testar em 4 navegadores e dois computadores (meu gabinete e notebook), em diversos zooms diferentes creio que nenhum elemento deva sobrepujar outro quaisquer sejam as configurações de exibição.
+        </p>
+      </main>
+
+    </div>
+
+    <h2 id="2" style="text-align:center;">História dos Videogames de mesa por gerações</h2>
+    <!-- Tabela com o lançamento dos primeiros consoles na ordem cronológica e um resumo da história de cada -->
+    <table style="border:solid black; border-width: 10px 20px 10px 10px; border-spacing: 5px;margin-right: auto;">
+      <caption> Um resumo em tabela da história dos videogames por geração</caption>
+
+      <tr style="background-color:black;color:gold;">
+        <th> Gerações</th>
+        <th> Sobre</th>
+        <th> Anos de<br>duração</th>
+      </tr>
+
+      <tr>
+        <td>
+          <img src="imagens/pong_atari.jpg" alt="pong_atari" class="img2"> <img src="imagens/magnavox_screenpaper.jpg" alt="magnavox" class="img2">  <br> <span style="font-size:20px">1° Geração</span>
+        </td>
+        <td>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A primeira geração de consoles de mesa foi caracterizada por vários jogos de pong, como o <b>ponghome da Atari</b>, e o lançamento do <b>Magnavox Odyssey</b>, que mesmo com a limitação de poucos pixels tentava criar uma maior imersão e divertimento com os papéis de tela, papéis com imagens representaivas de cada jogo que você colava na tela da tv.
+          </p>
+        </td>
+        <td class="tab_ano"> 1972-1976 </td>
+      </tr>
+
+      <tr>
+        <td>
+          <img src="imagens/h_e_r_o_.png" alt="hero" class="img2"><img src="imagens/Alien-Invaders-Plus-odyssey.png" alt="Invaders" class="img2"> <br> <span style="font-size:20px">2° Geração</span>
+        </td>
+        <td>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Na segunda geração de consoles de mesa foi inventado o sistema de jogos contidos em cartuchos, primeiramente visto no <b>Fairchild Channel F</b>, que permitia muito mais jogos com um único videogame. O grande console dessa geração foi o <b>Atari 2600</b>, sendo a Activision, à época, uma das melhores desenvolvedoras de jogos para console. Tendo já mais pixels disponíveis para trabalhar, foi no console da Atari que a empresa desenvolveu o memorável H.E.R.O. A Magnavox veio com seu <b>Odyssey 2</b>, tendo também o <b>colecovision</b> e <b>Intelevision</b>. Os plágios de consoles ainda eram bastante frequentes no mercado. Nenhum dos desenvolvedores do hardware tinham controle sobre os jogos que seriam lançados em suas plataformas, o que ocasionava em uma enxurrada de jogos de qualidade baixa com preço cheio. A gota d'água foi o planejado pela Atari E.T, que com o desenvolvimento apressado, e feito por uma única pessoa, virou a "cara" do crash dos videogames nos Estados Unidos em 1983.
+          </p>
+        </td>
+        <td class="tab_ano">1976-1983</td>
+      </tr>
+
+      <tr>
+        <td>
+          <img src="imagens/NES_Mario3.jpg" alt="Mario3" class="img2"><img src="imagens/SMS_Strider.png" alt="Strider" class="img2"> <br> <span style="font-size:20px">3° Geração</span>
+        </td>
+        <td>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A terceira geração de consoles de mesa marcou a chegada do <b>Nintendo entertainment System</b> no mercado dos EUA e o mundial, e o começo da era 8-bits dos videogames. Levantando novamente a onda dos videogames, no NES ocorreu a estréia em jogo solo do maior mascote da Nintendo, Mario, em Super Mario Bros. Contando já com a presença de seu irmão Luigi, o jogo era um plataforma no estilo corre e pula 2D. Além dele nascia já a franquia de aventura e RPG The Legend of Zelda, e dois grandes RPGs de peso da Enix e Square (hoje em dia fundidas na Square Enix), Final Fantasy e Dragon Quest. Foi uma época de grande dominância da Nintendo no mercado, já com seus estilo "family-friendly", mas a SEGA já estava a se impor com o <b>Master System</b>, com jogos exclusivos como Alex Kidd e ports de arcades como Strider. Inclusive, com a representação oficial da Tec Toy no Brasil, o console 8-bits da Sega foi um grande sucesso no país. A Atari tentou a sorte com seu <b>Atari 7800</b>, mas não obteve grande sucesso.
+          </p>
+        </td>
+        <td class="tab_ano">1983-1987</td>
+      </tr>
+
+      <tr>
+        <td>
+          <img src="imagens/Sonic_loop.jpg" alt="Sonic" class="img2"><img src="imagens/Salamander_PCEngine.png" alt="Salamander" class="img2"> <br> <span style="font-size:20px">4° Geração</span>
+        <td>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Um console expressivo que veio na vanguarda da 4° geração foi o <b>PC Engine</b>, um console 16-bits fabricado pela parceria entre as empresas japonesas NEC e Hudson Software no Japão. Com a Nintendo focando em jogos mais palatáveis ao público infantil, outras empresas procuravam atender a um público mais velho, como jovens adolescentes e adultos, faixa etária na qual o Master System da Sega fazia certo sucesso no Japão, e o PC Engine, com seus superiores 16-bits, conseguiu fisgar com sucesso para si em terras nipônicas, com ports de jogos como Splatterhouse, de terror, muitos jogos de navinha como Salamander, e seu próprio mascote, Bonk. Apesar de vingar no Japão, o console foi ignorado no Ocidente como <b>Turbo Grafx 16</b>. Mas foi por causa do console que a Sega do Japão decidiu desenvolver o <b>Mega Drive</b>, que também teria no seu início de vida no Japão foco em jogos mais adultos.</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Com a entrada de seu hardware nos Estados Unidos a SEGA tentaria competir diretamente com a Nintendo, criando para isso um mascote que competiria em questão de carisma e gameplay diretamente com Mario: Sonic the Hedgehog. Tendo no visual influências do estilo cartunesco dos personagens da Disney, empresa com a qual a SEGA inclusive fechou contrato para produzir jogos com personagens como Donald e Mickey Mouse, Sonic também foi pensado para ter um apelo mais "radical", e com uma história mais de acordo com a cultura dos Estados Unidos. Originalmente Sonic teria de salvar sua namorada humana das mãos do Dr. Eggman (nome que foi trocado para Robotnik no ocidente, e novamente para Eggman em jogos pós-Mega Drive), e seria vocalista de uma banda, ideias cortadas pela SEGA da América. Rebatizado de <b>Genesis</b> em 1989 nos Estados Unidos, o hardware realmente fez um grande sucesso no país, além de no Brasil e Europa como Mega Drive. No Japão, porém, não teve tanta popularidade. Dois anos depois do lançamento do Mega Drive viria finalmente o <b>Super Nintendo</b>, com seu Super Mario World, The Legend of Zelda: A Link to the Past, Super Metroid, entre outros jogos. Os dois consoles disputariam a liderança no mercado durante o resto da geração.
+          </p>
+        </td>
+        <td class="tab_ano">1987-1994</td>
+      </tr>
+
+      <tr>
+        <td>
+          <img src="imagens/Crash.jpg" alt="Crash" class="img2"><img src="imagens/ocarina.jpg" alt="ocarina" class="img2"><br><span style="font-size:20px">5° Geração</span>
+        </td>
+        <td>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A 5° Geração de videogames foi tomada de assalto pelos polígonos tridimensionais e a Sony. Em 1994 lançava o <b>Playstation</b>, competindo com o <b>Saturn</b> lançado no mesmo ano, da SEGA, que não era tão bom na renderização de jogos 3D, e o <b>Nintendo 64</b>, console da Nintendo voltado ao 3D, que era mais poderoso, de 64 bits, mas que ainda tinha pouco espaço de armazenamento com cartuchos. Nessa época a Sony lançou seus primeiros personagens-mascotes, que já na próxima geração perderiam exclusividade, Crash Bandicoot e Spyro The Dragon, ambos fazendo grande sucesso com sua jogabilidade 3D. Sonic não receberia realmente um jogo 3D para o Saturn, apenas relançamentos requentados dos jogos de Mega-Drive. Já a Nintendo contou com a Rare para fazer bons jogos plataforma tridimensionais como Banjo Kazooie e Conker's Bad Fur Day, convertendo também Mario para o 3D em Super Mario 64. Porém o mais impressionante foi The Legend of Zelda: Ocarina of Time, uma transição espetacular da franquia para o mundo tridimensional, com controles muito bem adaptados, até hoje é considerado um dos melhores jogos de todos os tempos.
+          </p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Antes, em 1993, a Atari lançou o <b>Atari Jaguar</b>, um fracassado console de 64-bits, e último da empresa, e também fora lançado o projeto <b>3DO</b>, que era fabricado por qualquer empresa que pagasse licença pela arquitetura da 3DO Company, sendo um dos mais famosos o modelo da Panasonic, mas ambos foram desenvolvidos para competir com os consoles 16-bits da Sega e Nintendo e eram muito inferiores aos consoles que vieram posteriormente.
+          </p>
+        </td>
+        <td class="tab_ano">1993-1998</td>
+      </tr>
+      <tr>
+        <td>
+          <img src="imagens/Virtua_Fighter3.jpg" alt="Virtua" class="img2"><img src="imagens/halo.jpg" alt="Halo" class="img2"><br><span style="font-size:20px">6° Geração</span>
+        </td>
+        <td>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Com o intuito de dar a volta por cima, a SEGA abriu a 6° geração com o <b>Dreamcast</b>, console feito em parceria com a Microsoft. Apesar do sucesso no lançamento, com o primeiro Sonic 3D,Sonic Adventure, a chegada do <b>Playstation 2</b> fez o Dreamcast cair drasticamente de vendas e ser descontinuado, assim como o desenvolvimento de consoles de mesa pela SEGA. A Microsoft, por outro lado, decidiu lançar seu próprio console, o <b>Xbox</b>, tendo destaque Halo, exclusivo jogo de tiro em primeira pessoa no console da empresa. Nem ele nem o <b>Gamecube</b>, o console da geração da Nintendo, conseguiram bater a popularidade do PS2, que contou com jogos como Devil May Cry e o espetacular Shadow of the Colossus. O Playstation 2 vendeu ainda mais que o PS1, sendo o console de mesa mais vendido do mundo.
+          </p>
+        </td>
+        <td class="tab_ano">1998-2005</td>
+      </tr>
+      <tr>
+        <td>
+          <img src="imagens/lollipop.jpg" alt="lollipop" class="img2"><img src="imagens/wii_sports.jpg" alt="wiisports" class="img2"><br><span style="font-size:20px">7° Geração</span>
+        </td>
+        <td>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Na sétima geração a Microsoft despontou com o <b>Xbox 360</b>, lançado um ano antes do <b>Playstation 3</b>. Os consoles dessa geração, assim como a anterior, tinham dado uma salto gráfico considerável, mesmo assim dos hardwares da Sony o PS2 continuou sendo mais popular que seu sucessor durante o início da nova geração. Da parte da Microsoft teve-se jogos como Gears of War, jogo de tiro em terceira pessoa num futuro distópico, e no console da Sony houve a estréia de Uncharted, jogo de ação e aventura com muitas cenas cinematográficas para expor a sua história sobre um caçador de tesouros antigos a la Indiana Jones.</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tendo sofrido com vendas abaixo do esperado com seus dois últimos consoles, a Nintendo decidiu mudar de paradigma e lançar o <b>Wii</b>, um videogame praticamente igual ao Gamecube em questão de hardware, mas vindo com um controle com sensor de movimento, wiimote. A boa execução da tecnologia no console da empresa rendeu frutos, e o <b>Wii</b> fez um sucesso enorme, entrando no hall dos consoles de mesa mais vendidos de todos, apesar de críticas sobre seus muitos jogos casuais, como o Wii Sports, que vinha com o console, e o jogo Just Dance, da Ubisoft, cujas novas versões saem para Wii até hoje.</p>
+        </td>
+        <td class="tab_ano">2005-2012</td>
+      </tr>
+      <tr>
+        <td>
+          <img src="imagens/GOW.png" alt="GOW" class="img2"><img src="imagens/forza.jpg" alt="forza" class="img2"><br><span style="font-size:20px">8° Geração</span>
+        </td>
+        <td>
+          <p>Na oitava geração Microsoft e Sony continuaram entregando videogames com hardwares melhores, de certa forma "competindo" pelo melhor, mas apostando em coisas novas e diversas, como os jogos de realidade virtual do <b>Playstation 4</b>, ou os serviços como o gamepass da Microsoft, que atualmente não funciona apenas no <b>Xbox one</b>, como também no computador, vindo antes do PSplus da Sony. Sequências de Halo, Gears of War e seus já conhecidos jogos de esporte e automobilismo como Forza Horizon 4 é o que se vê no console da Microsoft, enquanto a Sony continua com uma boa linha de exclusivos, como God of War (com uma nova história). A Nintendo, por outro lado, lançou seu <b>Wii-U</b> no final de 2012, com a mesma linha de jogos e um hardware novo e mais potente, mas não conseguiu emplacar o console, tendo inclusive pouco explorado títulos como Mario e Zelda nele, com um jogo de cada, basicamente, poucos jogos third-party.</p>
+          <p>A geração promete acabar esse ano, com o lançamentos dos Playstation 5 e Xbox Series X, enquanto a Nintendo parece já ter virado com seu Nintendo Switch, o console híbrido, tanto de mesa quanto portátil. &nbsp;<sub>-<a href="#00"> Fim do texto</a></sub>
+          </p>
+        </td>
+        <td class="tab_ano">2012-2020</td>
+      </tr>
+    </table>
+
+    <footer id="footer">
+      <ul style="margin:0;padding:0;overflow: hidden;list-style-type: none; bottom:0;">
+        <li style="padding:16px;"> BSI- Bacharelado em Sistemas de Informação</li>
+        <li style="padding:16px;"> DPW- Desenvolvimento de Páginas Web</li>
+        <li id="passou" style="padding:16px;"> Faltam <span id="dias"> </span> dias para a Brasil Game Show!</li>
+      </ul>
+    </footer>
+  </body>
+</html>
