@@ -13,7 +13,7 @@ O site se ajusta para diferentes tamanhos de tela através do CSS mediaquery.
 O site mostra o tempo que falta para começar o evento Brasil Game Show no rodapé de cada página.
 
 ## Deploy 🚀
-[VideogameHistory](https://videogamehistory.onrender.com/index.html) 🔗
+[VideogameHistory](https://videogamehistory.onrender.com) 🔗
 
 
 ## Tecnologias Utilizadas 🛠️
