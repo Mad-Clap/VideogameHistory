@@ -49,7 +49,7 @@ function dia_1(){
 }
 
 function evento(){
-  var dia_fixo = 6;
+  var dia_fixo = 11;
   var mes_fixo=9;
   var data = new Date();
   var dia= data.getDate();
