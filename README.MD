@@ -1,5 +1,5 @@
 ## VideogameHistory Web Page
-Desenvolvido para a matéria de Desenvolvimento de Páginas Web de Sistemas de Informação da UNIRIO, o site "Breve História do Video Game" conta resumidamente a história dos videogames, além de conter uma página de QUIZ e uma de curiosidades sobre produtos derivados da indústria dos videogames como eventos, livros, músicas e filmes.
+O site "Breve História do Video Game" conta resumidamente a história dos videogames, além de conter uma página de QUIZ e uma de curiosidades sobre produtos derivados da indústria dos videogames como eventos, livros, músicas e filmes.
 
 ## Funcionalidades JavaScript do site
 
